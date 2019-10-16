@@ -8,6 +8,7 @@ public class MusicQueue {
 	private int rear;
 	private int nItems;
 
+	//member functions
 	public MusicQueue(int s) {
 		maxSize = s;
 		queArray = new Song[maxSize];
