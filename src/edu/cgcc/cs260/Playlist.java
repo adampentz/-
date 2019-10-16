@@ -14,9 +14,9 @@ public class Playlist {
 		 * Insert a new node into list
 		 * @param name String name of song
 		 */
-		public void insert(String name) {
+		public void insert(String name, String filePath) {
 			//Create a new song
-			Song new_song = new Song(createUniqueID(), name);
+			Song new_song = new Song(createUniqueID(), name, filePath);
 			
 			//if there isn't a head, make new_song as head
 			if(this.head == null) {
