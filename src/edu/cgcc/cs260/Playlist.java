@@ -1,5 +1,10 @@
 package edu.cgcc.cs260;
 
+/**
+ * a singly-linked list song play list that can holds songs
+ * @author andrewb, cs260 class
+ *
+ */
 public class Playlist {
 	//members
 		Song head = null;

@@ -1,5 +1,10 @@
 package edu.cgcc.cs260;
 
+/**
+ * program entry point for cs260, wk4, le2
+ * @author andrewb, cs260 class
+ *
+ */
 public class Main {
 
 	public static void main(String[] args) {
@@ -19,7 +24,11 @@ public class Main {
 		//Print song list
 		System.out.println();
 		songPlaylist.print();
+		
+		//Swap a song then print after swap
+		songPlaylist.swap(songPlaylist.getSongAtPosition(3), songPlaylist.getSongAtPosition(1));
 		System.out.println();
+		songPlaylist.print();
 
 	}
 

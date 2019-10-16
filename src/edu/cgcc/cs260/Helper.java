@@ -1,6 +1,11 @@
 package edu.cgcc.cs260;
 import java.util.Random;
 
+/**
+ * a helper class created to provide assistance in CS260 demonstrations for Java
+ * @author andrewb
+ *
+ */
 public class Helper {
 	//#region Members
     private Random random;
