@@ -32,9 +32,35 @@ public class Main {
 		System.out.println();
 		songPlaylist.print();
 		
+		//Keep track of recently played songs
+		MusicStack musicStack = new MusicStack(2);
+		System.out.println();
+		musicStack.push(songPlaylist.getSongAtPosition(2));
+		musicStack.push(songPlaylist.getSongAtPosition(0));
+		//musicStack.push(songPlaylist.getSongAtPosition(1));
 		
+		//keep track of songs playing
+		MusicQueue musicQueue = new MusicQueue(4);
+		System.out.println();
+		musicQueue.enQueue(songPlaylist.getSongAtPosition(2));
+		musicQueue.enQueue(songPlaylist.getSongAtPosition(0));
+		System.out.println("stack");
+		System.out.println(musicStack.pop().name);
+		System.out.println(musicStack.pop().name);
+		System.out.println();
+		System.out.println("queue");
+		System.out.println(musicQueue.deQueue().name);
+		System.out.println(musicQueue.deQueue().name);
+		/*
+		for(int i = 0; i < musicStack.maxSize; i++) {
+			System.out.println(musicStack.stackArray[i].name);
+		}
 		
-		//Test audio play
+		for(int i = 0; i < musicQueue.size(); i++) {
+			System.out.println(musicQueue.qArray[i].name);
+		}
+		*/
+		/*Test audio play
 		try {
 			SimpleAudioPlayer player;
         	Scanner sc = new Scanner(System.in);
@@ -65,7 +91,7 @@ public class Main {
 		catch(Exception e) {
 			System.out.println(e.getMessage() + "\n" + e.getStackTrace()[0]);
 		}
-
+	*/
 	}
 
 }
